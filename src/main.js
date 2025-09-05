@@ -1,9 +1,9 @@
 import "./style.css";
-import { setValuesForm } from "./domElements";
-import { fetchQuestionsFromApi } from "./fetchQuestionsFromApi";
+import { setValuesForm } from "./modules/domElements";
+import { fetchQuestionsFromApi } from "./modules/fetchQuestionsFromApi";
 import { v4 as uuidv4 } from "uuid";
-import { startQuiz } from "./startQuiz";
-import { setQuestions } from "./setQuestions";
+import { startQuiz } from "./modules/startQuiz";
+import { setQuestions } from "./modules/setQuestions";
 
 setValuesForm.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -23,6 +23,6 @@ setValuesForm.addEventListener("submit", async (e) => {
     ),
   }));
   setQuestions(questionsWithId);
-  console.log(questionsWithId);
+  // console.log(questionsWithId);
   startQuiz(questionsWithId);
 });
