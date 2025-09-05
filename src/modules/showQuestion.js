@@ -1,6 +1,6 @@
-import { questionContainer } from "./domElements";
-import { checkAnswer } from "./checkAnswer";
-import { decodeHTML } from "./decodeHTML";
+import { questionContainer } from "./modules/domElements";
+import { checkAnswer } from "./modules/checkAnswer";
+import { decodeHTML } from "./modules/decodeHTML";
 
 export const showQuestion = (question, currentIndex, score) => {
   questionContainer.replaceChildren();

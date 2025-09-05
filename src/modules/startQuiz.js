@@ -1,5 +1,5 @@
-import { showQuestion } from "./showQuestion";
-import { correctOutput, incorrectOutput } from "./domElements";
+import { showQuestion } from "./modules/showQuestion";
+import { correctOutput, incorrectOutput } from "./modules/domElements";
 export const startQuiz = (questions) => {
   let currentIndexForQuestion = 0;
   let score = 0;

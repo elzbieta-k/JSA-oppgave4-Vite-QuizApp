@@ -2,7 +2,7 @@ import {
   questionContainer,
   correctOutput,
   incorrectOutput,
-} from "./domElements";
+} from "./modules/domElements";
 
 export const showFinalScore = (score, questions) => {
   questionContainer.replaceChildren();
