@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/JSA-oppgave4-Vite-QuizApp/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mind Master Quiz</title>
+    <script type="module" crossorigin src="/JSA-oppgave4-Vite-QuizApp/assets/index-CkUpAQyS.js"></script>
+    <link rel="stylesheet" crossorigin href="/JSA-oppgave4-Vite-QuizApp/assets/index--HsLAWbO.css">
+  </head>
+  <body>
+    <h1>Mind Master Quiz</h1>
+    <div id="info-container">
+      <div id="chosing-difficulty">
+        <p>
+          You’ll face 10 challenging questions designed to test your memory and
+          knowledge.
+        </p>
+        <p>
+          🔸 Pick your difficulty level (Easy, Medium, Hard) to set the
+          challenge.
+        </p>
+        <p>🔸 Choose your answer type (Multiple Choice or True/False).</p>
+        <p>
+          🔸 Try to score as high as possible — every correct answer counts!
+        </p>
+        <p>When you’re ready, click Start and show what you know!</p>
+        <form id="chosed-values">
+          <label for="difficulty">Choose difficulty:</label>
+          <select name="difficulty-level" id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+          <label for="type">Choose type:</label>
+
+          <select name="type" id="type">
+            <option value="multiple">Multiple</option>
+            <option value="boolean">True/False</option></select
+          ><br />
+          <input type="submit" value="Start" />
+        </form>
+      </div>
+      <div id="score-container">
+        <h2>SCORE TABLE</h2>
+        <div class="scores-div">
+          <div class="scores">
+            <h5>Correct:</h5>
+            <p id="correct">0</p>
+          </div>
+          <div class="scores">
+            <h5>Incorrect:</h5>
+            <p id="incorrect">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="question-container"></div>
+  </body>
+</html>
