@@ -5,6 +5,8 @@ import { v4 as uuidv4 } from "uuid";
 import { startQuiz } from "./modules/startQuiz";
 import { setQuestions } from "./modules/setQuestions";
 
+//Getting from user chosen difficulty and question type, getting 10 questions from API and setting unique ID
+//Setting questions to a global variable and call the startQuiz function
 setValuesForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
@@ -23,6 +25,5 @@ setValuesForm.addEventListener("submit", async (e) => {
     ),
   }));
   setQuestions(questionsWithId);
-  // console.log(questionsWithId);
   startQuiz(questionsWithId);
 });

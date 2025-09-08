@@ -1,3 +1,5 @@
+//Getting quesetions from API with a chosen difficulty and type of answers(multiple or true/false)
+
 import axios from "axios";
 
 export const fetchQuestionsFromApi = async (difficulty, type) => {

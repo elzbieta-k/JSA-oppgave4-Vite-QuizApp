@@ -1,8 +1,10 @@
+//shows final score after 10 questions
+
 import {
   questionContainer,
   correctOutput,
   incorrectOutput,
-} from "./modules/domElements";
+} from "./domElements";
 
 export const showFinalScore = (score, questions) => {
   questionContainer.replaceChildren();

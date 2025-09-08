@@ -1,11 +1,13 @@
+//Checking the answer from the user and set colors to the buttons depending of it is true(green) or false (red)
+
 import {
   correctOutput,
   incorrectOutput,
   questionContainer,
-} from "./modules/domElements";
-import { showQuestion } from "./modules/showQuestion";
-import { showFinalScore } from "./modules/showFinalScore";
-import { questionsWithId } from "./modules/setQuestions";
+} from "./domElements";
+import { showQuestion } from "./showQuestion";
+import { showFinalScore } from "./showFinalScore";
+import { questionsWithId } from "./setQuestions";
 
 export const checkAnswer = (
   question,

@@ -1,12 +1,14 @@
-import { questionContainer } from "./modules/domElements";
-import { checkAnswer } from "./modules/checkAnswer";
-import { decodeHTML } from "./modules/decodeHTML";
+//Displaying a question with possible answers and setting addEventListener that call checkAnswer function
+
+import { questionContainer } from "./domElements";
+import { checkAnswer } from "./checkAnswer";
+import { decodeHTML } from "./decodeHTML";
 
 export const showQuestion = (question, currentIndex, score) => {
   questionContainer.replaceChildren();
 
   const category = document.createElement("h4");
-  category.textContent = `CATEGORY: ${question.category}`;
+  category.textContent = `CATEGORY: ${decodeHTML(question.category)}`;
   const questionOutput = document.createElement("h3");
   questionOutput.textContent = decodeHTML(question.question);
 

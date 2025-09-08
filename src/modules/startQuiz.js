@@ -1,5 +1,7 @@
-import { showQuestion } from "./modules/showQuestion";
-import { correctOutput, incorrectOutput } from "./modules/domElements";
+//Reset state, call function showQuestions, and pass score and current index of the question
+
+import { showQuestion } from "./showQuestion";
+import { correctOutput, incorrectOutput } from "./domElements";
 
 export const startQuiz = (questions) => {
   let currentIndexForQuestion = 0;
