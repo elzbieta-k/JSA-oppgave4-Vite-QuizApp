@@ -1,6 +1,7 @@
 # Mind Master Quiz
 
 Mind Master Quiz is a web-based quiz application built with Vite, vanilla JavaScript, and modern CSS. Users can select quiz difficulty and question type, answer 10 questions fetched from the Open Trivia Database API, and see their score at the end.
+<img width="1920" height="868" alt="mindMasterQuiz" src="https://github.com/user-attachments/assets/1f3210e0-2da6-41cb-9045-4aec27d5d150" />
 
 ## Features
 
