@@ -154,3 +154,13 @@ input[type="submit"],
     align-items: center;
   }
 }
+
+@media (max-width: 450px) {
+  #chosing-difficulty {
+    width: 90vw;
+  }
+
+  #chosed-values {
+    flex-direction: column;
+  }
+}
